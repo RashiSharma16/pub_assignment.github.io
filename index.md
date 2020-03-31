@@ -31,16 +31,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1>Fill out your information</h1>
 
      <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" class="formfield" required><br>
+  <input type="text" id="name" name="name" class="formfield" pattern="[A-Za-z]{4,30}" required><br>
 
  <label for="email">Email Id:</label><br>
-  <input type="text" id="email" name="email" class="formfield" required><br>
+  <input type="text" id="email" name="email" class="formfield" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
 
   <label for="mobile">Mobile:</label><br>
-  <input type="text" id="mobile" name="mobile" class="formfield" required><br>
+  <input type="text" id="mobile" name="mobile" class="formfield" pattern="[7-9]{1}[0-9]{9}" required><br>
 
   <label for="dob">Date of Birth:</label><br>
-  <input type="date" id="dob" name="dob" class="formfield" required><br>
+  <input type="date" id="dob" name="dob" class="formfield" onblur=validateForm() required><br>
 
   <label for="gender">Gender:</label><br>
   <input type="radio" id="male" name="gender" class="formfield" required>
