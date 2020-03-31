@@ -7,6 +7,7 @@ document.getElementsByClassName("btn").onclick=function(){
 function selectedImage(){
  if(document.getElementsByName('image').selected=true){
   var x=this.src;
+  sessionStorage.setItem('img_src',x);
   console.log(x);
  }
 }
@@ -17,7 +18,6 @@ function retrieveImg(){
   var img=document.createElement("img");
   img.src=sessionStorage.getItem('img_src');
   document.getElementById('img_div').appendChild(img);
-  down.innerHTML="Thank you for your selection";
   return img;
 }
 
