@@ -40,7 +40,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <input type="text" id="mobile" name="mobile" class="formfield" pattern="[7-9]{1}[0-9]{9}" required><br>
 
   <label for="dob">Date of Birth:</label><br>
-  <input type="date" id="dob" name="dob" class="formfield" onblur=validateForm() required><br>
+  <input type="date" id="dob" name="dob" class="formfield" required><br>
 
   <label for="gender">Gender:</label><br>
   <input type="radio" id="male" name="gender" class="formfield" required>
