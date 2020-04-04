@@ -9,16 +9,17 @@ pageData.push({
  'pageCategory': 'fill-info'
 });
 </script>
-<!-- Google Tag Manager -->
+
+ <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KBXNWM9');</script>
 <!-- End Google Tag Manager -->
-  
+
  <link rel="stylesheet" href="style.css">
-<script src=javascript.js> </scri
+<script src=javascript.js> </script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -51,7 +52,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <input type="radio" id="other" class="formfield" name="gender">
     <label for="other">Other</label><br><br>
 
-    <button type="submit" class="btn" id="submit-btn" onclick="validateForm()">Submit</button>
+    <button type="submit" class="btn" id="submit-btn">Submit</button>
   </form>
 </div>
 
