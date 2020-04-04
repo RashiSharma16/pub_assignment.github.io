@@ -33,26 +33,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1>Fill out your information</h1>
 
      <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" class="formfield" pattern="[A-Za-z]{4,30}" required><br>
+  <input type="text" id="name" name="name" class="formfield" pattern="[A-Za-z]{4,30} required onclick="ga('send', 'event', 'form field track', 'click', 'Name');"><br>
 
  <label for="email">Email Id:</label><br>
-  <input type="text" id="email" name="email" class="formfield" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+  <input type="text" id="email" name="email" class="formfield" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="ga('send', 'event', 'form field track', 'click', 'email');" ><br>
 
   <label for="mobile">Mobile:</label><br>
-  <input type="text" id="mobile" name="mobile" class="formfield" pattern="[7-9]{1}[0-9]{9}" required><br>
+  <input type="text" id="mobile" name="mobile" class="formfield" pattern="[7-9]{1}[0-9]{9}" required onclick="ga('send', 'event', 'form field track', 'click', 'mobile');"><br>
 
   <label for="dob">Date of Birth:</label><br>
-  <input type="date" id="dob" name="dob" class="formfield" required><br>
+  <input type="date" id="dob" name="dob" class="formfield" required onclick="ga('send', 'event', 'form field track', 'click', 'Date of birth');"><br>
 
   <label for="gender">Gender:</label><br>
-  <input type="radio" id="male" name="gender" class="formfield" required>
+  <input type="radio" id="male" name="gender" class="formfield" required onclick="ga('send', 'event', 'form field track', 'click', 'Gender:male');">
   <label for="male">Male</label>
-   <input type="radio" id="female" class="formfield" name="gender">
+   <input type="radio" id="female" class="formfield" name="gender" onclick="ga('send', 'event', 'form field track', 'click', 'Gender:female');" >
    <label for="female">Female</label>
-    <input type="radio" id="other" class="formfield" name="gender">
+    <input type="radio" id="other" class="formfield" name="gender" onclick="ga('send', 'event', 'form field track', 'click', 'Gender:other');">
     <label for="other">Other</label><br><br>
 
-    <button type="submit" class="btn" id="submit-btn">Submit</button>
+    <button type="submit" class="btn" id="submit-btn" onclick="ga('send', 'event', 'submit button', 'click', 'submit');">Submit</button>
   </form>
 </div>
 
