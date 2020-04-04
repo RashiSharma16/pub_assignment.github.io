@@ -2,6 +2,7 @@
 <html>
 <head>
   <script>
+    dataLayer = [];
     window.pageData = window.pageData || [];
 pageData.push({
  'pageNumber': '1',
