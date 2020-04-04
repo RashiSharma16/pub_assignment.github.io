@@ -32,8 +32,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <form action="page2.html" class="container" id="forminfo">
     <h1>Fill out your information</h1>
 
-     <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" class="formfield" pattern="[A-Za-z]{4,30} required onclick="ga('send', 'event', 'form field track', 'click', 'Name');"><br>
+    <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" class="formfield" pattern="[A-Za-z]{4,30}" required onclick="ga('send', 'event', 'form field track', 'click', 'Name');"><br>
 
  <label for="email">Email Id:</label><br>
   <input type="text" id="email" name="email" class="formfield" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required onclick="ga('send', 'event', 'form field track', 'click', 'email');" ><br>
